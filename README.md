@@ -1,1 +1,2 @@
-# Fibonacci sequence generator
+# Fibonacci sequence
+Fibonacci sequence generator by algorithm
