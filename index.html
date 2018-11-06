@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <p id="p"></p>
+    <script>
+      window.onload = function  start() {
+            var array=[];
+            var txt="";
+            array.push(0);
+            array.push(1);
+            array.push(array[0]+array[1]);
+            txt=array[2];
+            console.log(txt)
+            for (i = 0; i<10; i++) {
+                console.log("array[2]");
+               array[0]=array[1];
+               array[1]=array[2];
+               array[2] =array[0]+array[1];
+               txt=txt+","+array[2];
+               document.getElementById("p").innerHTML= txt;
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
